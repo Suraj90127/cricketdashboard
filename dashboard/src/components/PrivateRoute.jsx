@@ -29,11 +29,11 @@ const PrivateRoute = () => {
     }
   );
 
-  useEffect(() => {
-    if (!processedUserInfo) {
-      dispatch(getAdmin());
-    }
-  }, [dispatch, processedUserInfo]);
+  // useEffect(() => {
+  //   if (!processedUserInfo) {
+  //     dispatch(getAdmin());
+  //   }
+  // }, [dispatch, processedUserInfo]);
 
   useEffect(() => {
     setOk(!!processedUserInfo);

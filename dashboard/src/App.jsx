@@ -32,6 +32,7 @@ import UserPLByMarket from "./pages/UserPLByMarket";
 import Cricketbet from "./pages/Cricketbet";
 import Tennisbet from "./pages/Tennisbet";
 import Soccerbet from "./pages/Soccerbet";
+import Withdrowal from "./pages/Withdrowal";
 
 
 
@@ -65,6 +66,7 @@ function App() {
                   <Route path="/master-banking" element={<MasterBanking />} />
                   <Route path="/commission" element={<Commision />} />
                   <Route path="/online-user/:id" element={<UserProfile />} />
+                  <Route path="/withdrawal" element={<Withdrowal />} />
                   <Route
                     path="/password-history"
                     element={<PasswordHistory />}

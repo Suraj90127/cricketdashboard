@@ -69,6 +69,7 @@ const Navbar = () => {
     { name: "Commision", path: "/commission" },
     { name: "Password History", path: "/password-history" },
     { name: "Restore User", path: "/restore-user" },
+    { name: "Withdrawal", path: "/withdrawal" },
   ];
 
   const logout = async () => {
