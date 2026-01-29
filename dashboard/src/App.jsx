@@ -5,7 +5,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
-import Userlist from "./pages/userlist";
+import Userlist from "./pages/Userlist";
 import MyAccount from "./pages/MyAccount";
 import Security from "./pages/Security";
 import EventPL from "./pages/EventPL";
