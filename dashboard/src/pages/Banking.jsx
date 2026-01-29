@@ -118,8 +118,6 @@ const Banking = () => {
             <h2 className="font-bold">Account Statement</h2>
           </div>
 
-          <h1>hello suraj</h1>
-
           <div className="p-4">
             <div className="flex flex-col md:flex-row justify-between mb-4">
               <div className="flex items-center mb-2 md:mb-0">
