@@ -11,9 +11,9 @@ const PrivateRoute = () => {
   const [ok, setOk] = useState(true);
 
   // Memoize the userInfo processing to avoid unnecessary computations
-  const processedUserInfo = useMemo(() => {
-    return userInfo ? userInfo : null;
-  }, [userInfo]);
+  // const processedUserInfo = useMemo(() => {
+  //   return userInfo ? userInfo : null;
+  // }, [userInfo]);
 
 
   api.interceptors.response.use(
@@ -35,9 +35,9 @@ const PrivateRoute = () => {
   //   }
   // }, [dispatch, processedUserInfo]);
 
-  useEffect(() => {
-    setOk(!!processedUserInfo);
-  }, [processedUserInfo]);
+  // useEffect(() => {
+  //   setOk(!!processedUserInfo);
+  // }, [processedUserInfo]);
 
   return ok ? <Outlet /> : <Spinner />;
 };
