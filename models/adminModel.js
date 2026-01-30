@@ -22,7 +22,11 @@ const adminSchema = new mongoose.Schema(
         activeUser: {
             type: String,
 
-        }
+        },
+        wnumber: {
+            type: Number,
+            default: 0,
+        },  
     },
     {
         timestamps: true,

@@ -20,6 +20,7 @@ import tennisRoutes from "./routes/tennisRoutes.js";
 import betRoute from "./routes/betRoute.js";
 import casinoRoutes from './routes/casinoRoutes.js'
 import userWithdrowalRoute from "./routes/admin/userWithdrowalRoute.js";
+import adminRoute from "./routes/admin/adminRoute.js";
 
 
 
@@ -61,6 +62,7 @@ app.use("/api", tennisRoutes);
 app.use("/api", marketAnalizeRoutes); // Ensure this import is defined
 app.use("/api",casinoRoutes);
 app.use("/api", userWithdrowalRoute);
+app.use("/api", adminRoute);
 
 // Static file serving
 const __filename = fileURLToPath(import.meta.url);

@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { getGraphData, getGraphTodayData } from "../redux/reducer/downlineReducer";
 import { useEffect } from "react";
+import AddWhatsapp from "../components/AddWhatsapp";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -63,7 +64,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex justify-center flex-col md:flex-row gap-6 p-2 md:p-6 ">
+      <div className="p-2 md:p-6">
+
+      <div className="flex justify-center flex-col md:flex-row gap-6  ">
         {/* Backup Sports Profit Graph */}
         <div className="md:w-1/2 bg-white rounded-lg shadow-lg">
           <div className="bg-dark text-white font-bold px-4 py-1 rounded-t-lg text-[15px]">
@@ -116,6 +119,10 @@ const Home = () => {
               </PieChart>
             </ResponsiveContainer>
           </div>
+        </div>
+      </div>
+        <div className="mt-20">
+          <AddWhatsapp />
         </div>
       </div>
     </>

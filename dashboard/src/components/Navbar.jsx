@@ -70,6 +70,7 @@ const Navbar = () => {
     { name: "Password History", path: "/password-history" },
     { name: "Restore User", path: "/restore-user" },
     { name: "Withdrawal", path: "/withdrawal" },
+    { name: "Recharge", path: "/recharge" },
   ];
 
   const logout = async () => {
@@ -263,7 +264,7 @@ const Navbar = () => {
           <li className="inline-block">
             <button
               onClick={logout}
-              className="flex items-center gap-1 px-3 py-2 font-semibold text-[13px] text-white border-r border-gray-500"
+              className="items-center gap-1 px-3 py-2 font-semibold text-[13px] text-white border-r border-gray-500"
             >
               Logout <MdLogout />
             </button>
@@ -335,7 +336,7 @@ const Navbar = () => {
           ))}
           <li
             onClick={logout}
-            className="absolute right-0 flex items-center gap-1 cursor-pointer px-3 py-2 whitespace-nowrap font-semibold transition-colors text-[13px] text-white hover:text-white"
+            className="right-0 flex items-center gap-1 cursor-pointer px-3 py-2 whitespace-nowrap font-semibold transition-colors text-[13px] text-white hover:text-white"
           >
             Logout <MdLogout />
           </li>
