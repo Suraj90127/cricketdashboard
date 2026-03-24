@@ -1,7 +1,6 @@
 import axios from "axios";
 import adminModel from "../models/adminModel.js";
 
-const OPENAI_API_KEY = "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"
 
 // export const getCricketData = async (req, res) => {
 //   try {
