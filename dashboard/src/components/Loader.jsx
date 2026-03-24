@@ -3,16 +3,7 @@ import "./Loader.css"
 
 const Loader = () => {
   return (
-    //     <div class="dot-spinner">
-    //     <div class="dot-spinner__dot"></div>
-    //     <div class="dot-spinner__dot"></div>
-    //     <div class="dot-spinner__dot"></div>
-    //     <div class="dot-spinner__dot"></div>
-    //     <div class="dot-spinner__dot"></div>
-    //     <div class="dot-spinner__dot"></div>
-    //     <div class="dot-spinner__dot"></div>
-    //     <div class="dot-spinner__dot"></div>
-    // </div>
+
     <>
       <div className="bg-white h-[116px] w-[185px] rounded-[20px] mx-auto overflow-hidden flex justify-center items-center ">
         <div className="loader">

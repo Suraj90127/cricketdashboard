@@ -79,5 +79,5 @@ app.get("*", (req, res) =>
 // ✅ Setup WebSocket
 setupWebSocket(server); // 🧠 Pass server to WebSocket file
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));

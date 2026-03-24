@@ -5,7 +5,7 @@ import { getDownlinePendingBetsByGame, getMasterBook, getMasterBookDownline, get
 
 const router = express.Router();
 
-router.get("/market-analyze", adminAuthMiddleware, getDownlinePendingBetsByGame);
+router.get("/market-analyze", getDownlinePendingBetsByGame);
 router.get("/market/pending-amount", adminAuthMiddleware, getPendingMarketAmounts);
 router.get("/get/market-bet-perents/:id", adminAuthMiddleware, parentsDetails);
 router.get("/get/master-book", adminAuthMiddleware, getMasterBook);

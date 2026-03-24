@@ -5,8 +5,12 @@ import mongoose from "mongoose";
 
 
 export const getDownlinePendingBetsByGame = async (req, res) => {
-    const { id } = req;
+    // const { id } = req;
+    const id  = "69381b7c89a51fa3cebcd0e4";
     const { gameName } = req.query;  // optional: to drill into specific game
+
+    console.log("game name",gameName);
+    
 
     try {
         const admin = await SubAdmin.findById(id);
